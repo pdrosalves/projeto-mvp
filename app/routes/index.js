@@ -1,0 +1,54 @@
+//Arquivo com todas as rotas
+const usuario = require('./usuario.routes');
+const aluno = require('./aluno.routes');
+const professor = require('./professor.routes');
+const questao = require('./questao.routes');
+const questaoDia = require('./questaodia.routes');
+const hardskill = require('./hardskill.routes');
+const softskill = require('./softskill.routes');
+const turma = require('./turma.routes');
+const disciplina = require('./disciplina.routes');
+const tarefa = require('./tarefa.routes');
+const atividadeAvaliativa = require('./atividadeavaliativa.routes');
+const avaliacao360 = require('./avaliacao360.routes');
+const curso = require('./curso.routes');
+const grupo = require('./grupo.routes');
+const alunoHardskills = require('./aluno_hardskills.routes');
+const alunoSoftskills = require('./aluno_softskills.routes');
+const avaliacao360Softskills = require('./avaliacao360_softskills.routes');
+const grupoAlunos = require('./grupo_alunos.routes');
+const atividadeAvaliativaHardskills = require('./atividadeavaliativa_hardskills.routes');
+const turmaHardskills = require('./turma_hardskills.routes');
+const turmaCursos = require('./turma_cursos.routes');
+const disciplinaHardskills = require('./disciplina_hardskills.routes');
+const professorTurmas = require('./professor_turmas.routes');
+const alunoTurmas = require('./aluno_turmas.routes');
+const professorDisciplinas = require('./professor_disciplinas.routes');
+
+module.exports = app => {
+    app.use('/api/usuario',usuario);
+    app.use('/api/aluno',aluno);
+    app.use('/api/professor',professor);
+    app.use('/api/questao',questao);
+    app.use('/api/questaoDia',questaoDia);
+    app.use('/api/hardskill',hardskill);
+    app.use('/api/softskill',softskill);
+    app.use('/api/turma',turma);
+    app.use('/api/disciplina',disciplina);
+    app.use('/api/tarefa',tarefa);
+    app.use('/api/atividadeAvaliativa',atividadeAvaliativa);
+    app.use('/api/avaliacao360',avaliacao360);
+    app.use('/api/curso',curso);
+    app.use('/api/grupo',grupo);
+    app.use('/api/aluno_hardskills',alunoHardskills);
+    app.use('/api/aluno_softskills',alunoSoftskills);
+    app.use('/api/avaliacao360_softskills',avaliacao360Softskills);
+    app.use('/api/grupo_alunos',grupoAlunos);
+    app.use('/api/atividadeAvaliativa_hardskills',atividadeAvaliativaHardskills);
+    app.use('/api/turma_hardskills',turmaHardskills);
+    app.use('/api/turma_cursos',turmaCursos);
+    app.use('/api/disciplina_hardskills',disciplinaHardskills);
+    app.use('/api/professor_turmas',professorTurmas);
+    app.use('/api/aluno_turmas',alunoTurmas);
+    app.use('/api/professor_disciplinas',professorDisciplinas);
+}
